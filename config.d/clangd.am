@@ -1,0 +1,27 @@
+#
+# DO NOT EDIT - this file is generated from config.d/clangd.am
+#
+
+Index:
+  Background: Build
+  StandardLibrary: No
+
+CompileFlags:
+  CompilationDatabase: /usr/local/projects/collabora/LibreOffice/online
+  Add: [-Wall, -Wextra, -Wshadow, -Wundef, -Werror, -DENABLE_SSL=0, -DENABLE_DEBUG=1, -DDEBUG, -DAPP_NAME="App", -DTDOC="test/data", -std=c++20, -isystem, /usr/local/projects/collabora/LibreOffice/online, -isystem, /usr/local/projects/collabora/LibreOffice/online/common, -isystem, /usr/local/projects/collabora/LibreOffice/online/net, -isystem, /usr/local/projects/collabora/LibreOffice/online/wsd, -isystem, /usr/local/projects/collabora/LibreOffice/online/kit, -isystem, /usr/local/projects/collabora/LibreOffice/online/test, -isystem, /usr/include/libpng16, -isystem, /usr/local/projects/collabora/LibreOffice/lo_co24_ol7710_1/include]
+
+Diagnostics:
+  UnusedIncludes: Strict
+  ClangTidy:
+    FastCheckFilter: Loose
+
+InlayHints:
+  Enabled: No
+  BlockEnd: Yes
+  Designators: No
+  ParameterNames: Yes
+  DeducedTypes: Yes
+  TypeNameLimit: 24
+
+Hover:
+  ShowAKA: Yes
